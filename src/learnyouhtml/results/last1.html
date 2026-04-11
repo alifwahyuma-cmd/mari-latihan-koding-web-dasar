@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Format Struktur Baru</title>
+    
+    <style>
+        /* Elemen style diletakkan di sini sesuai urutan yang diminta */
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Menampilkan pesan menggunakan CSS agar tidak menambah elemen HTML baru di body */
+        body::before {
+            content: "Struktur HTML telah disesuaikan!";
+            color: #1f2937;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- Linked stylesheet berada setelah style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+</head>
+
+<!-- Inline style diterapkan langsung di tag body -->
+<body style="background-color: #f3f4f6;">
+    
+    <script>
+        // Inline script menjadi satu-satunya child element di dalam body
+        console.log("Script berhasil dimuat. DOM tree sudah sesuai dengan format Anda.");
+    </script>
+
+</body>
+</html>
